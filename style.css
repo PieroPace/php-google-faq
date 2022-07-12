@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid lightgrey;
+    margin: 0;
+    padding: 1em 1em 0 1em;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-top .logo, 
+.header-top .dots {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+}
+
+.header-top .logo span {
+    font-size: 1.3rem;
+    margin-left: 0.5em;
+    color: rgb(83, 83, 83);    
+}
+
+.header-top .dots span {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+    background-color: rgb(65, 109, 65);
+    color: white;
+    margin-left: 1em;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header nav li {
+    display: inline-block;
+    margin: 0.5em 2em 0.5em 0;
+    color: rgb(107, 107, 107);
+}
+header nav li.active {
+    position: relative;
+    color: blue;
+}
+
+header nav ul li.active a:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: blue;
+    position: absolute;
+    top: 125%;
+    left: 0;
+
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+main {
+    padding-top: 4rem;
+}
+
+main h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+
+main p {
+    margin-bottom: 2rem;
+}
+
+main p, main li{
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+}
+
+main a{
+    text-decoration: none;
+}
+
+main a:active,
+main a:hover,
+main a:focus {
+    color: blue;
+}
+
+ol.letter {
+    list-style-type: lower-alpha;
+}
+
+footer {
+    background-color: #F5F5F5;
+    padding: 0.8em 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .list-inline ul {
+    list-style-type: none;
+}
+footer .list-inline li {
+    display: inline-block;
+    font-size: 0.6em;
+    margin: 0 0.2em;
+    color: grey;
+}
+
+footer select {
+    width: 150px;
+}
